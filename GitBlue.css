@@ -42,9 +42,6 @@ pre[class*="language-"],
   margin: .67em 0;
 }
 
-.markdown-preview-view img {
-  border-style: none;
-}
 
 .markdown-preview-view code,
 .markdown-preview-view pre {
@@ -461,9 +458,21 @@ pre[class*="language-"],
 }
 
 .markdown-preview-view img {
-  max-width: 100%;
-  box-sizing: initial;
+  border-style: none;
+  /*box-sizing: initial;*/
   background-color: #fff;
+  width: 33%;
+  display: block;
+  margin-top: 20pt;
+  margin-bottom: 20pt;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.25s ease;
+}
+
+.markdown-preview-view img:hover {
+  -webkit-transform: scale(2); /* experiment with values */
+  transform: scale(2);
 }
 
 /*  noformat in table */
