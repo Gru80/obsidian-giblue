@@ -7,4 +7,4 @@ This theme is based on the github style, just with a blue-ish touch
 
 ## Installation
 
-Copy `GitBlue.css` to the folder `.obsidian\themes` of your vault
+Copy the  `GitBlue` folder to the folder `.obsidian\themes` of your vault
