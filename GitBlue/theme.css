@@ -1,4 +1,11 @@
 
+.theme-light {
+  --code-background: #fafaff;
+  --color-h1: #5B3289;
+  --color-h2: #7B62A9;
+  --color-h3ff: #9B82C9;
+}
+
 .workspace-split.mod-root .view-content .markdown-preview-view {
   background-color: #fff;
 }
@@ -40,6 +47,23 @@ pre[class*="language-"],
 .markdown-preview-view h1 {
   font-size: 2em;
   margin: .67em 0;
+  color: var(--color-h1);
+}
+
+.markdown-preview-view h2 {
+  font-size: 2em;
+  margin: .67em 0;
+  color: var(--color-h2);
+}
+
+
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  font-size: 2em;
+  margin: .67em 0;
+  color: var(--color-h3ff);
 }
 
 
@@ -130,7 +154,6 @@ pre[class*="language-"],
 .markdown-preview-view h6 {
   margin-top: 0;
   margin-bottom: 0;
-  color: #24292e;
 }
 
 .markdown-preview-view h1 {
@@ -514,7 +537,7 @@ pre[class*="language-"],
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #fafaff;
+  background-color: var(--code-background);
   border-radius: 5px;
 }
 
@@ -529,7 +552,6 @@ pre[class*="language-"],
   background-color: initial;
   border: 0;
 }
-
 
 
 .markdown-preview-view .task-list-item {
@@ -563,5 +585,22 @@ pre[class*="language-"],
   margin: 2px;
   color: #0366d6;
   background-color: #e5e5ff;
+}
+
+/* Live Preview */ 
+
+.cm-header-1 {
+  color: var(--color-h1);
+}
+
+.cm-header-2 {
+  color: var(--color-h2);
+}
+
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  color: var(--color-h3ff);
 }
 
